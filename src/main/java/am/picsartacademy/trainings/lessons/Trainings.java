@@ -8,6 +8,18 @@ public class Trainings {
     private boolean isOnline;
     private String location;
 
+    public Trainings() {
+    }
+
+    public Trainings(String title) {
+        System.out.println("Want to start your journey? Join our " + title + " class now");
+    }
+
+    public  Trainings (String trainerName, int duration) {
+        this.trainerName = trainerName;
+        this.duration = duration;
+    }
+
     public void isFull(int currentParticipants) {
         if (currentParticipants >= 12) {
             System.out.println("You can't apply anymore");
