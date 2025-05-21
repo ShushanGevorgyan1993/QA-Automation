@@ -6,6 +6,23 @@ public class ProgrammingLanguages extends Trainings {
     private boolean isObjectOriented;
     private boolean examIncluded;
 
+    public ProgrammingLanguages() {
+
+    }
+    public ProgrammingLanguages(String languageName) {
+        this.languageName = languageName;
+    }
+
+    public ProgrammingLanguages(String title, boolean isObjectOriented) {
+        super(title);
+        if(isObjectOriented) {
+            System.out.println("We teach only OOP");
+        } else {
+            System.out.println("Apply later");
+        }
+        System.out.println("Line to print after super");
+
+    }
 
     public void printDetails() {
         System.out.println("Apply now if you want to master in programming");
@@ -50,6 +67,7 @@ public class ProgrammingLanguages extends Trainings {
 
     @Override
     public void startLesson() {
+        super.startLesson();
         System.out.println("Join now to get the best learning path");
     }
 }

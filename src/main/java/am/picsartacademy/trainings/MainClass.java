@@ -9,7 +9,7 @@ public class MainClass {
     public static void main(String[] args) {
 
 
-        Trainings trainings = new Trainings();
+        Trainings trainings = new Trainings("Java");
         trainings.setTitle("Java");
         trainings.setCost(120000);
         trainings.setDuration(9);
@@ -22,6 +22,13 @@ public class MainClass {
                 " months, and the cost is " + trainings.getCost());
 
         System.out.println("---------------------------");
+        System.out.println();
+
+        ProgrammingLanguages p = new ProgrammingLanguages("Javascript", true){
+        };
+
+        System.out.println();
+        System.out.println("------------------------");
 
         Trainings javascript = new ProgrammingLanguages();
         javascript.setOnline(true);
